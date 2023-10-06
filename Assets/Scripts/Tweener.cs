@@ -6,6 +6,7 @@ public class Tweener : MonoBehaviour
 {
     //private Tween activeTween;
     private List<Tween> activeTweens;
+    public bool movingRightNow = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,11 +48,13 @@ public class Tweener : MonoBehaviour
 
                 Vector3 nextPos = Vector3.Lerp(tween.StartPos, tween.EndPos, t);
                 tween.Target.position = nextPos;
+                movingRightNow = true;
                 }
                 else
                 {
                     tween.Target.position = tween.EndPos;
                     activeTweens.RemoveAt(i);
+                    movingRightNow = false;
                 }
             }
         }

@@ -67,7 +67,7 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetKeyDown(KeyCode.W)){
+       /* if(Input.GetKeyDown(KeyCode.W)){
             Vector3 endPos = new Vector3(0.0f,0.5f,2.0f);
             float duration = 1.5f;
             foreach(GameObject i in itemList){
@@ -107,5 +107,6 @@ public class InputManager : MonoBehaviour
             GameObject newClone = Instantiate(item, new Vector3(0.0f,0.5f,0.0f),Quaternion.identity);
             itemList.Add(newClone);
         }
+        */
     }
 }
