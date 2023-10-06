@@ -725,6 +725,9 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\conna\Desktop\13913431_Assess3\Assignment3GamesDev\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:\Users\conna\Desktop\13913431_Assess3\Assignment3GamesDev\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>C:\Users\conna\Desktop\13913431_Assess3\Assignment3GamesDev\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
