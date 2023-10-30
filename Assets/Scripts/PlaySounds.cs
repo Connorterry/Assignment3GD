@@ -12,7 +12,6 @@ public class PlaySounds : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(introMusic);
         audioSource.clip = ghostsNormal;
         audioSource.loop = true;
     }
