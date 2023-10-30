@@ -21,7 +21,7 @@ public class InputManager : MonoBehaviour
 
     IEnumerator waitSeconds(float i){ // Just waiting for intro music to end
         yield return new WaitForSeconds(i);
-        StartCoroutine(MovePacStudent());
+        //StartCoroutine(MovePacStudent());
     }
 
     IEnumerator MovePacStudent(){
