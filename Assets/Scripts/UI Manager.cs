@@ -13,17 +13,24 @@ public class UIManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-        public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-        //if(scene.buildIndex == 1){
-            // GameObject objectButton = GameObject.FindWithTag("QuitButton");
-            // Button quitButton = objectButton.GetComponent<Button>();
-            // quitButton.onClick.AddListener(QuitGame);
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+        if(scene.buildIndex == 1){
+                GameObject objectButton = GameObject.FindWithTag("QuitButton");
+                Button quitButton = objectButton.GetComponent<Button>();
+                quitButton.onClick.AddListener(QuitGame);
             // healthBar = GameObject.FindWithTag("PlayerHealthBar");
             // healthBarImage = healthBar.GetComponent<Image>();
             // player = GameObject.FindWithTag("Player");
             // playerTransform = player.GetComponent<Transform>();
             //parentHealth = GameObject.FindWithTag("HealthBar").GetComponent<Image>();
-        //}
+        }
+    }
+
+    public void QuitGame(){
+        SceneManager.LoadScene(0);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        Destroy(GameObject.FindWithTag("Manager"));
+
     }
     void Start()
     {
