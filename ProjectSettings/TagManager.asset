@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Everything
+    uniqueID: 3840045041
+    locked: 0
